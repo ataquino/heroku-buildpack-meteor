@@ -13,7 +13,7 @@ source $bp_dir/bin/common.sh
   mkdir ../app_src
   # the shopt makes the * glob catch .files
   shopt -s dotglob nullglob
-  mv * ../app_src
+  mv ./Web/* ../app_src
   mv ../app_src ./app_src
 )
 

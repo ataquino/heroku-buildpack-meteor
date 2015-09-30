@@ -1,9 +1,4 @@
 #!/bin/sh
 # USAGE bin/detect BUILD_DIR
 
-if [ -d $1/web/.meteor ]; then
-  echo "meteor"
-  exit 0
-else
-  exit 1
-fi
+echo "Node.js" && exit 0

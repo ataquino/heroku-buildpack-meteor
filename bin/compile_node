@@ -104,10 +104,6 @@ if [ "$npm_engine" != "" ]; then
   npm install --quiet -g npm@$npm_engine > /dev/null 2>&1 | indent
 fi
 
-# Install Worker's dependencies
-cd $build_dir/worker_src
-npm install
-
 # Run subsequent commands from the build directory
 cd $build_dir
 

@@ -11,13 +11,10 @@ source $bp_dir/bin/common.sh
   head "Moving app source into a subdirectory"
   cd $1
   mkdir ../app_src
-  mkdir ../worker_src
   # the shopt makes the * glob catch .files
   shopt -s dotglob nullglob
   mv ./Web/* ../app_src
   mv ../app_src ./app_src
-  mv ./Worker/* ../worker_src
-  mv ../worker_src ./worker_src
 )
 
 

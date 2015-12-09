@@ -7,5 +7,4 @@ cat <<-YAML
 ---
 default_process_types:
   web: node build/bundle/main.js
-  worker: node worker_src/index.js
 YAML
